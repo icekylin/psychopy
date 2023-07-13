@@ -33,7 +33,7 @@ jobs:
       if: runner.os == 'Darwin' 
       run: |
         brew update --preinstall
-        brew install glfw lame libevent 
+        brew install glfw lame libevent libffi
         brew install labstreaminglayer/tap/lsl
 
     - name: Unpack portable Python distro
