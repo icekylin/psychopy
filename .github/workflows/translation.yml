@@ -5,8 +5,8 @@ on:
   push:
     branches:
       - translationWorkflow
-    paths:
-      - "**.po"
+    #paths:
+    #  - "**.po"
 
 jobs:
   compile_mo_files:
