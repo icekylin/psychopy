@@ -22,12 +22,13 @@ jobs:
 
       - name: Compiling .mo scripts
         run: |
-          ls -d psychopy/app/locale/*/LC_MESSAGES/*.po | grep -v "en-GB" | xargs python i18n/msgfmt.py
+          ls -a /opt/hostedtoolcache/Python/3.10.13/x64/
+          ls -d app/locale/*/LC_MESSAGES/*.po | grep -v "en-GB" | xargs python /opt/hostedtoolcache/Python/3.10.13/x64/Tools/msgfmt.py
 
       - name: Stage and count changes
         id: staging
         run: |
-          ls -d psychopy/app/locale/*/LC_MESSAGES/*.mo | grep -v "en-GB" | xargs git add
+          ls -d app/locale/*/LC_MESSAGES/*.mo | grep -v "en-GB" | xargs git add
           echo "NUM_OF_STAGED=$(git diff --staged --name-only | wc -l)" >> $GITHUB_OUTPUT
 
       - name: Push translation changes
