@@ -22,7 +22,7 @@ jobs:
 
       - name: Compiling .mo scripts
         run: |
-          ls -a /opt/hostedtoolcache/Python/3.10.13/x64/
+          ls -R /opt/hostedtoolcache/Python/3.10.13/x64/
           ls -d app/locale/*/LC_MESSAGES/*.po | grep -v "en-GB" | xargs python /opt/hostedtoolcache/Python/3.10.13/x64/Tools/msgfmt.py
 
       - name: Stage and count changes
