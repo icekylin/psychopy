@@ -24,7 +24,7 @@ jobs:
         run: |
           #ls -R /opt/hostedtoolcache/Python/3.10.13/x64/
           #ls -d app/locale/*/LC_MESSAGES/*.po | grep -v "en-GB" | xargs python msgfmt.py
-          ls -R ./
+          #ls -R ./
           for x in ${{ github.workspace }}/app/locale/*/*.po ; do python .github/workflows/msgfmt.py --output-file "`dirname "$x"`/`basename "$x" .po`.mo" "$x" ; done
 
       - name: Stage and count changes
