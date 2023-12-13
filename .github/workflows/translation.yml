@@ -3,6 +3,8 @@ name: Generate Psychopy translations
 on:
   workflow_dispatch:
   push:
+    branches:
+      - translationWorkflow
     paths:
       - "**.po"
 
