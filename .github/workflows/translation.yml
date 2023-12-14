@@ -5,8 +5,8 @@ on:
   push:
     branches:
       - testTranslationWorkflow
-    paths:
-      - "**.po"
+    #paths:
+    #  - "**.po"
 
 jobs:
   update_translations:
