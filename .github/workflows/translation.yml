@@ -18,12 +18,13 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: "3.8"
+          python-version: "3.10"
 
       - name: Compiling .mo files
         run: |
+          set -x
           for x in ${{ github.workspace }}/psychopy/app/locale/*/*/*.po ;\
-             do echo "python .github/workflows/msgfmt.py --output-file "`dirname "$x"`/`basename "$x" .po`.mo" "$x" " ; \
+             do python .github/workflows/msgfmt.py --output-file "`dirname "$x"`/`basename "$x" .po`.mo" "$x" ; \
           done
 
       - name: Stage all changes
