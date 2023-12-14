@@ -2220,7 +2220,7 @@ msgstr "稍后"
 #: ../app/connections/updates.py:171
 #, python-format
 msgid "You are running the latest version of PsychoPy (%s). "
-msgstr "正在运行最新版本的PsychoPy（%s）。"
+msgstr "正在运行最新版本的PsychoPy (%s). "
 
 #: ../app/connections/updates.py:198
 #, python-format
