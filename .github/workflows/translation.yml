@@ -4,9 +4,10 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - translationWorkflow
-    #paths:
-    #  - "**.po"
+      - dev
+      - release
+    paths:
+      - "**.po"
 
 jobs:
   update_translations:
