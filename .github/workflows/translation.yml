@@ -23,7 +23,7 @@ jobs:
       - name: Compiling .mo files
         run: |
           for x in ${{ github.workspace }}/psychopy/app/locale/*/*/*.po ;\
-             do python .github/workflows/msgfmt.py --output-file "`dirname "$x"`/`basename "$x" .po`.mo" "$x" ; \
+             do echo "python .github/workflows/msgfmt.py --output-file "`dirname "$x"`/`basename "$x" .po`.mo" "$x" " ; \
           done
 
       - name: Stage all changes
