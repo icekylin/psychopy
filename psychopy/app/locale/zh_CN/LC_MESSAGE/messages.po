@@ -24,7 +24,7 @@ msgstr ""
 
 #: __init__.py:48
 msgid "Welcome to PsychoPy2!"
-msgstr "欢迎使用 PsychoPy！"
+msgstr "欢迎使用 PsychoPy!"
 
 #: ../alerts/_alerts.py:121 ../alerts/_alerts.py:123
 msgid "msg"
@@ -7113,7 +7113,7 @@ msgstr ""
 
 #: ../monitors/MonitorCenter.py:401
 msgid "Get Photometer"
-msgstr 获取光度计""
+msgstr "获取光度计"
 
 #: ../monitors/MonitorCenter.py:407
 msgid "Gamma Calibration..."

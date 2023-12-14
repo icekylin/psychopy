@@ -232,13 +232,15 @@ def main():
             sys.exit(0)
         elif opt in ('-o', '--output-file'):
             outfile = arg
-    # do it
+    # do it 
     if not args:
         print('No input file given', file=sys.stderr)
         print("Try `msgfmt --help' for more information.", file=sys.stderr)
         return
 
     for filename in args:
+        print("----------------------------------------------")
+        print(filename, outfile)
         make(filename, outfile)
 
 
