@@ -7109,7 +7109,7 @@ msgstr "使用 Bits++"
 
 #: ../monitors/MonitorCenter.py:392
 msgid "Scan all ports"
-msgstr "扫描所有端口"
+msgstr ""
 
 #: ../monitors/MonitorCenter.py:401
 msgid "Get Photometer"
