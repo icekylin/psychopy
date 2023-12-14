@@ -24,7 +24,7 @@ jobs:
         run: |
           set -x
           for x in ${{ github.workspace }}/psychopy/app/locale/*/*/*.po ;\
-             do python .github/workflows/msgfmt.py --output-file "`dirname "$x"`/`basename "$x" .po`.mo" "$x" ; \
+             do python .github/workflows/msgfmt.py --output-file "`dirname "$x"`/`basename "$x"`.mo" "$x" ; \
           done
 
       - name: Stage all changes
