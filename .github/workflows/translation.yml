@@ -26,7 +26,7 @@ jobs:
           set -x
           find -name messages.pot
           messages_pot=$(find -name messages.pot)
-          pybabel update --input-file="$messages_pot" --output-dir="${{ github.workspace }}/psychopy/app"
+          pybabel update --input-file="$messages_pot" --output-dir="${{ github.workspace }}/psychopy/app" --previous
 
       - name: Compiling .mo files
         run: |
