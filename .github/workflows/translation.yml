@@ -26,7 +26,7 @@ jobs:
           set -x
           find -name messages.pot
           messages_pot=$(find -name messages.pot)
-          pybabel update -i ./psychopy/localization/messages.pot -d ./psychopy/app/locale
+          pybabel update -i psychopy/localization/messages.pot -d psychopy/app/locale
           # for x in $(ls -d ./psychopy/app/locale/*/); do
           #   echo "$x"
           #   pybabel update --input-file="$messages_pot" --output-dir="$x";
